@@ -1,0 +1,35 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"extends": ["//"],
+	"pipeline": {
+		"build": {
+			"dependsOn": ["typecheck"],
+			"outputs": [".dist/**"],
+			"inputs": ["src/**", "public/**", "package.json", "tsconfig.json", "tsup.config.ts"]
+		},
+		"dev": {
+			"cache": false
+		},
+		"eslint": {
+			"outputs": [],
+			"inputs": ["src/**/*.ts", "package.json"]
+		},
+		"eslint-fix": {
+			"outputs": []
+		},
+		"typecheck": {
+			"outputs": []
+		},
+		"test": {
+			"inputs": [
+				"src/**/*.ts",
+				"__test__/**/*.ts",
+				" jest.config.ts",
+				"jest.globals.ts",
+				"tsconfig.json",
+				"package.json"
+			],
+			"outputs": []
+		}
+	}
+}

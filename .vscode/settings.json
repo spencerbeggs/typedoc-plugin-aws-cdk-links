@@ -1,0 +1,56 @@
+{
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"eslint.workingDirectories": ["./configs/eslint", "./configs/tsconfig", "./configs/jest", "./generators/ecma-package"],
+	"eslint.experimental.useFlatConfig": true,
+	"eslint.useESLintClass": true,
+	"eslint.debug": true,
+	"editor.formatOnSave": true,
+	"explorer.sortOrder": "default",
+	"explorer.sortOrderLexicographicOptions": "unicode",
+	"[markdown]": {
+		"editor.formatOnSave": false
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true,
+		"pnpm-lock.yaml": true
+	},
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/.turbo": true,
+		"**/dist": true,
+		"**/.coverage": true
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+		"editor.formatOnSave": true
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.markdownlint": true,
+		"source.addMissingImports": true
+	},
+	"prettier.enable": true,
+	"prettier.configPath": ".prettierrc",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"npm.packageManager": "pnpm",
+	"stylelint.enable": false,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"terminal.integrated.profiles.osx": {
+		"zsh": {
+			"path": "zsh"
+		}
+	},
+	"json.schemas": [
+		{
+			"url": "https://cdn.jsdelivr.net/npm/tsup/schema.json",
+			"fileMatch": ["package.json", "tsup.config.json"]
+		}
+	]
+}

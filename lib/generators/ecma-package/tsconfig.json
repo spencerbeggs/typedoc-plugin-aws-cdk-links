@@ -1,0 +1,3 @@
+{
+	"extends": "./node_modules/@configs/tsconfig/ecma.json"
+}

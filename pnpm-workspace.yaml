@@ -1,0 +1,4 @@
+packages:
+  - lib/configs/*
+  - packages/*
+  - lib/generators/*

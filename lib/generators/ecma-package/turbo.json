@@ -1,0 +1,13 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"extends": ["//"],
+	"pipeline": {
+		"eslint": {
+			"outputs": [],
+			"inputs": ["src/**/*.ts", "package.json"]
+		},
+		"eslint-fix": {
+			"outputs": []
+		}
+	}
+}

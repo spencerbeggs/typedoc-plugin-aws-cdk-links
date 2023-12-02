@@ -1,0 +1,27 @@
+{
+	"name": "turbo-template",
+	"version": "0.0.0",
+	"description": "A template repo for configuring a Turborepo with sensible default configurations.",
+	"author": {
+		"name": "C. Spencer Beggs",
+		"email": "spencer@beg.gs"
+	},
+	"type": "module",
+	"packageManager": "pnpm@8.11.0",
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"gen": "turbo gen",
+		"lint": "turbo run eslint",
+		"lint-fix": "turbo run eslint-fix",
+		"eslint": "eslint .",
+		"test": "turbo run test --color"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
+		"@configs/eslint": "workspace:*",
+		"@configs/jest": "workspace:*",
+		"@configs/tsconfig": "workspace:*",
+		"turbo": "1.10.16"
+	}
+}

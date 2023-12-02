@@ -1,0 +1,11 @@
+{
+	"extends": "./node_modules/@configs/tsconfig/ecma.json",
+	"ts-node": {
+		"skipIgnore": true,
+		"esm": true,
+		"compilerOptions": {
+			"target": "ES2018",
+			"esModuleInterop": false
+		}
+	}
+}
